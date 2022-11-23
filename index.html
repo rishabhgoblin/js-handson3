@@ -18,6 +18,26 @@ N /= 10;<br>
 return count;<br>
 };<br>
 <hr>
+const Find_Five = (N) =><br> 
+{<br>
+ count = 0;<br>
+  while (N>0){<br>
+    if(N%10==5){<br>
+    count = count + 1;<br>
+    }<br>
+    N = parseInt(N/10)<br>
+  }<br>
+  return count;<br>
+};<br>
+<hr>
+const findSum = (n) => {<br>
+  sum = 0;<br>
+    for(let i = 2; i <= n; i+=2){<br>
+      sum = sum + i;<br>  
+      }<br>
+      return sum;<br>    
+ };<br>
+ <hr>
     const Number_Sum = (N) => <br>
 {<br>
 	let sum = 0;<br>
@@ -27,6 +47,44 @@ return count;<br>
 	}<br>
 	return sum;<br>
 };<br>
+<hr>
+const Print_Odd = (N) => <br>
+{ <br>
+	console.log(2) <br>
+ for(i=3; i<=N; i++){ <br>
+if(i%2 == 1){ <br>
+console.log(i) <br>
+  } <br>
+  } <br>
+};<br>
+<hr>
+const Print_pattern = (N) => <br>
+{ <br>
+pat ="" <br>
+for(let i=1; i<=N; i++){ <br>
+  for(let j=1; j<=i; j++){ <br>
+   pat = pat + "*" <br>
+  } <br>
+   pat =pat + "\n" <br>
+  } <br>
+console.log(pat + "\n") <br>
+}; <br>
+<hr>
+const Prime_Check = (N) => <br>
+{ <br>
+ sum=0; <br>
+	 for(i=1; i<=N; i++){ <br>
+	   if(N%i==0){ <br>
+	     sum = sum + 1 <br>
+	   } <br>
+	   } <br>
+	 if(sum == 2){ <br>
+	   return "YES" <br>
+	 } <br>
+	 else{ <br>
+	   return "NO" <br>
+	 }	 <br>
+	};<br>
 <hr>
 const printNumbers = (n) => {<br>
     for(let i=1; i<=n; i++)<br>
